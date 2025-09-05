@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#main-header{
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #0f5a73;
+    color: white !important;
+}
+#header-title{
+    margin: 20px 30px;
+    line-height: 0.6;
+    font-size: 40px;
+}
+#filter{
+    border: 3px solid white;
+    width: 100%;
+    margin: 20px 30px;
+    line-height: 0;
+    font-size: 20px;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+#search{
+    display: flex;
+    flex-wrap: wrap;
+    width: -webkit-fill-available;
+    max-width: 620px;
+}
+#filter:focus{
+    box-shadow: 0px 0px 15px rgb(0, 255, 247);
+}
+
+
+.container{
+    border: 1px solid rgba(0, 0, 0, .125);
+    min-width: fit-content;
+    border-radius: 10px;
+    margin: 2vw 5vw;
+    padding: 10px 15px;
+}
+.container h2{
+    font-size: 2.5rem;
+    line-height: 0;
+}
+#addform{
+    display: flex;
+    flex-wrap: wrap;
+}
+#insert{
+    display: flex;
+    flex-wrap: wrap;
+    width: -webkit-fill-available;
+    max-width: 300px;
+}
+#item{
+    font-size: rem;
+    border-radius: 5px;
+    min-height: 2rem;
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+.btn{
+    width: 4rem;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 8px;
+    border-color: #1d2124;
+    background-color: #1d2124;
+    color: white;
+}
+#item:focus{
+    box-shadow: 0px 0px 6px rgb(15, 193, 187);
+}
+.btn:focus{
+    box-shadow: 0px 0px 6px #1d2124;
+}
+
+
+#items{
+    list-style: none;
+    padding-inline-start: 2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#items li{
+    border: 1px solid rgba(0, 0, 0, .125);
+    padding: 10px;
+    padding-bottom: 15px;
+    font-size: 1.4rem;
+    display:flex;
+    justify-content: space-between;
+}
+#items li button{
+    border-collapse: collapse;
+    height: 2rem;
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#items li button:focus{
+    box-shadow: 0px 0px 6px #bd2130;
+}
