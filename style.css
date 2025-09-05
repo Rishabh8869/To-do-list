@@ -1,6 +1,9 @@
+# Gradient background for body
 body{
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 #main-header{
     min-height: 100px;
@@ -8,22 +11,29 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-between;
-    background-color: #0f5a73;
-    color: white !important;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff !important;
+    box-shadow: 0 4px 16px rgba(67,198,172,0.2);
 }
 #header-title{
     margin: 20px 30px;
     line-height: 0.6;
     font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #19165488;
 }
 #filter{
-    border: 3px solid white;
+    border: 2px solid #43c6ac;
     width: 100%;
     margin: 20px 30px;
     line-height: 0;
     font-size: 20px;
     padding: 0.3rem;
-    border-radius: 5px;
+    border-radius: 8px;
+    background: #fff;
+    color: #191654;
+    transition: box-shadow 0.3s;
 }
 #search{
     display: flex;
@@ -32,24 +42,29 @@ body{
     max-width: 620px;
 }
 #filter:focus{
-    box-shadow: 0px 0px 15px rgb(0, 255, 247);
+    box-shadow: 0px 0px 15px #43c6ac;
 }
 
 
 .container{
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 1px solid #43c6ac;
     min-width: fit-content;
-    border-radius: 10px;
+    border-radius: 16px;
     margin: 2vw 5vw;
-    padding: 10px 15px;
+    padding: 18px 24px;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 2px 12px rgba(67,198,172,0.15);
 }
 .container h2{
     font-size: 2.5rem;
     line-height: 0;
+    color: #191654;
+    text-shadow: 1px 1px 6px #43c6ac44;
 }
 #addform{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 #insert{
     display: flex;
@@ -58,30 +73,37 @@ body{
     max-width: 300px;
 }
 #item{
-    font-size: rem;
-    border-radius: 5px;
+    font-size: 1.1rem;
+    border-radius: 8px;
     min-height: 2rem;
     width: 100%;
     margin-right: 10px;
     margin-top: 10px;
     padding: 0px 10px;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 1px solid #43c6ac;
+    background: #f8ffae;
+    color: #191654;
+    transition: box-shadow 0.3s;
 }
 .btn{
     width: 4rem;
-    font-size: 0.85rem;
-    border-radius: 4px;
+    font-size: 0.95rem;
+    border-radius: 8px;
     margin-top: 10px;
     padding: 8px;
-    border-color: #1d2124;
-    background-color: #1d2124;
-    color: white;
+    border: none;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #43c6ac44;
+    transition: box-shadow 0.3s, background 0.3s;
 }
 #item:focus{
-    box-shadow: 0px 0px 6px rgb(15, 193, 187);
+    box-shadow: 0px 0px 8px #43c6ac;
 }
 .btn:focus{
-    box-shadow: 0px 0px 6px #1d2124;
+    box-shadow: 0px 0px 8px #191654;
 }
 
 
@@ -91,24 +113,32 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 12px;
 }
 #items li{
-    border: 1px solid rgba(0, 0, 0, .125);
-    padding: 10px;
-    padding-bottom: 15px;
-    font-size: 1.4rem;
+    border: 1px solid #43c6ac;
+    padding: 12px 18px 18px 18px;
+    font-size: 1.2rem;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #fff;
+    color: #191654;
+    box-shadow: 0 2px 8px #43c6ac22;
 }
 #items li button{
-    border-collapse: collapse;
+    border: none;
     height: 2rem;
     color: #fff;
-    background-color: #c82333;
-    border-color: #bd2130;
-    border-radius: 5px;
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    border-radius: 8px;
     margin-right: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #ff585844;
+    transition: box-shadow 0.3s, background 0.3s;
 }
 #items li button:focus{
-    box-shadow: 0px 0px 6px #bd2130;
+    box-shadow: 0px 0px 8px #f09819;
 }
